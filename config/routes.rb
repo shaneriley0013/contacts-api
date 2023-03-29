@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get "/first_contact" => "contacts#first"
+  get "/first_contact" => "contacts#show"
   
   get "/last_contact" => "contacts#last"
 
