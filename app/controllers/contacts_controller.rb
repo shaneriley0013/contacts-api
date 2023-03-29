@@ -14,14 +14,8 @@ class ContactsController < ApplicationController
   
   
   def last
-    contact = Contact.last
-    render json: {
-      id: contact.id,
-      first_name: contact.first_name,
-      last_name: contact.last_name,
-      email: contact.email,
-      phone_number: contact.phone_number,
-    }
+    @contact = Contact.last
+    render template: "contacts/last"
   end
 
 
