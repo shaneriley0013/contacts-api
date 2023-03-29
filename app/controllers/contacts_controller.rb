@@ -33,16 +33,7 @@ class ContactsController < ApplicationController
 
   def all
     contacts = Contact.all
-    # all_contacts = []
-    # contacts.each do |contact|
-    #   all_contacts << {
-    #     id: contact.id,
-    #     first_name: contact.first_name,
-    #     last_name: contact.last_name,
-    #     email: contact.email,
-    #     phone_number: contact.phone_number
-    #   }
-    # end
+    
 
     render json: [
       {
@@ -75,12 +66,16 @@ class ContactsController < ApplicationController
       },
       
     ]
+    # all_contacts = []
+    # contacts.each do |contact|
+    #   all_contacts << {
+    #     id: contact.id,
+    #     first_name: contact.first_name,
+    #     last_name: contact.last_name,
+    #     email: contact.email,
+    #     phone_number: contact.phone_number
+    #   }
+    # end
   end
-
-
-
-
-
-
 
 end
