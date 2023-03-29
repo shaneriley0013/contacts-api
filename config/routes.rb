@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   
   get "/last_contact" => "contacts#last"
 
-  get "/all_contact" => "contacts#all"
+  get "/all_contacts" => "contacts#all"
   
 end
