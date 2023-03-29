@@ -8,14 +8,14 @@ class ContactsController < ApplicationController
   
   
   def show
-    @contact = Contact.find_by(id: 6)    
+    @contact = Contact.first    
     render template: "contacts/show"
   end
   
   
   def last
     @contact = Contact.last
-    render template: "contacts/last"
+    render template: "contacts/show"
   end
 
 
