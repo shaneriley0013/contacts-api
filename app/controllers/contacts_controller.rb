@@ -49,8 +49,8 @@ class ContactsController < ApplicationController
     @contact.email = params[:email] || @contact.email
     @contact.phone_number = params[:phone_number] || @contact.phone_number
     @contact.address = params[:address] || @contact.address
-    @contact.lat = params[:lat] || @contact.lat
-    @contact.lng = params[:lng] || @contact.lng    
+    @contact.lat = latitude 
+    @contact.lng = longitude
     
     if @contact.save
       render :show
